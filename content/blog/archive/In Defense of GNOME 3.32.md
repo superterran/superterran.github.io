@@ -1,7 +1,5 @@
 ---
-title: In Defense of GNOME 3.32
 date: 2019-03-03T19:58:40-04:00
-draft: false
 ---
 
 It's fair to say gnome-shell is, and always has been, polarizing. There's folks like me who love it and think it's picked up Apple's mantle of driving the workstation desktop. There are others who see it as a spartan waste of good screen real estate. These two perspectives are at odds, and the GNOME community has gained a reputation for dismissing the latter and shoving the former down everyone's throats. If you spend a few minutes appreciating the GNOME design philosophy or flipping through their [Human Interface Guidelines](https://developer.gnome.org/hig/stable/), they are on on the right track here.  
@@ -16,8 +14,6 @@ GNOME solves the icon clutter by simply removing desktop icons altogether, and a
 
 Another real pain-point with gnome-shell is how it's constantly fumbling notifications. Earlier releases of Gnome Shell, the 3.6's and  3.8's had a notification shelf on the bottom of the screen that was reminiscent 
 of Chat Heads and honestly one of the best notification implementations I've used. 
-
-![chat-bubble.png]({{site.baseurl}}assets/posts/chat-bubble.png)
 
 It's since devolved into a something, I can hardly explain what at this point. 3.8 notifications were deserving of a better Chat app than Empathy. Perhaps Slack and Hipchat killed that momentum. Maybe they're back at the drawing board remaking it into a Macos/Windows-like Notification center that flies out from the right of the screen. 
 

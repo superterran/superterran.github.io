@@ -1,7 +1,5 @@
 ---
-title: Cool Uses for a Raspberry Pi
 date: 2017-10-29T19:58:40-04:00
-draft: false
 ---
 
 So this year I bought a 3D printed tiny Super Nintendo Case and put a Raspberry Pi 3 in it. At first, my only concern was to have a [RetroPie setup](https://retropie.org.uk/), because of my childhood love of [legally obtained ROMs](https://www.myabandonware.com/). This part was easy enough and obtainable in one sitting. Putting a RetroPie together is quick and easy, and those guys have really done a great job bridging the gap between a terminal driven configuration and controller-only input. 

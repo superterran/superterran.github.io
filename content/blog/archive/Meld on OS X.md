@@ -1,7 +1,5 @@
 ---
-title: Meld on OS X
 date: 2016-01-12T19:58:40-04:00
-draft: false
 ---
 
 Finding a good (free) diff tool is hard for OS X. Here, we'll setup Meld (a popular diff tool on linux) to run with OS X and git. 

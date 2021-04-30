@@ -1,7 +1,5 @@
 ---
-title: Crostini, GPU Acceleration and Steam
 date: 2019-04-12T19:58:40-04:00
-draft: false
 ---
 
 With ChromeOS 75 hitting the dev channel, we're starting to see budding 3D support on the Pixel Slate. It's still unstable, and not a lot works with it, but it may be worth playing around with if you're interested in gaming on this great little tablet.
