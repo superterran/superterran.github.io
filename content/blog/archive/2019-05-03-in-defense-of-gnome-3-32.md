@@ -1,6 +1,6 @@
 ---
 title: In Defense of GNOME 3.32
-date: 2019-05-03T19:58:40-04:00
+date: 2019-03-03T19:58:40-04:00
 draft: false
 ---
 
