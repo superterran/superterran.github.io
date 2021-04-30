@@ -3,7 +3,7 @@ title = "superterran"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
-theme = ["https://github.com/MunifTanjim/minimo"]
+theme = "minimo"
 
 disqusShortname = ""
 googleAnalytics = ""
