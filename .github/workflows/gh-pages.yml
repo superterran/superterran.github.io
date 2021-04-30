@@ -4,7 +4,7 @@ on:
     branches:
       - main
   repository_dispatch:
-    types: [blog-update] 
+    types: [trigger-build] 
 jobs:
   deploy:
     runs-on: ubuntu-18.04
