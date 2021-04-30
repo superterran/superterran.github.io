@@ -7,29 +7,29 @@
 <a href=#share-menu class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
 <a href=#site-nav class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a></nav><menu id=search class=menu><input id=search-input class="search-input menu"></input><div id=search-results class="search-results menu"></div></menu><menu id=share-menu class="flyout-menu menu"><h1>Share Post</h1></menu></header><div id=wrapper><section id=site-intro><a href=/><img src=https://superterran.github.io/images/logo.png class=circle width=200 alt="superterran logo"></a><header><h1>Doug Hatcher</h1></header><main><p>From my editor, through some pipes, to your browser</p></main><footer><ul class=socnet-icons><li><a href=//github.com/superterran target=_blank rel=noopener title=GitHub class="fab fa-github"></a></li><li><a href=//codepen.io/superterran target=_blank rel=noopener title=CodePen class="fab fa-codepen"></a></li><li><a href=//www.linkedin.com/in/doughatcher target=_blank rel=noopener title=LinkedIn class="fab fa-linkedin"></a></li><li><a href=//facebook.com/doug.hatcher target=_blank rel=noopener title=Facebook class="fab fa-facebook"></a></li><li><a href=//reddit.com/user/superterran target=_blank rel=noopener title=Reddit class="fab fa-reddit"></a></li><li><a href=//twitter.com/superterran target=_blank rel=noopener title=Twitter class="fab fa-twitter"></a></li><li><a href=mailto:superterran@gmail.com target=_blank title=Email class="far fa-envelope"></a></li></ul></footer></section><main id=site-main><article class=post><header><div class=title><h2><a href=/2016-01-12-meld-on-osx/>Meld on OS X</a></h2></div><div class=meta><time datetime="2016-01-12 19:58:40 -0400 -0400">January 12, 2016</time><p>2-Minute Read</p></div></header><div id=socnet-share></div><div class=content><p>Finding a good (free) diff tool is hard for OS X. Here, we&rsquo;ll setup Meld (a popular diff tool on linux) to run with OS X and git.</p><p>First, install a decent Mac build of Meld, there&rsquo;s a few options but here&rsquo;s one I really like:</p><p><a href=https://github.com/yousseb/meld/releases/tag/osx-v1>https://github.com/yousseb/meld/releases/tag/osx-v1</a></p><p>Once this is installed, you need to make bash script so Meld is command-line executable and can be invoke through git. Name this file &lsquo;meld&rsquo; and place it in a sourced directory that you can run commands from globally. I like to set up a ~/bin directory where I can put scripts like this and magerun so I can run them from anywhere, but you may have a better place for it on your system. You can source a directory by adding the following to the bottom of your ~/.zshrc or ~/.bash_profile:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>export PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/Users/User/bin:</span>$PATH<span style=color:#e6db74>&#34;</span>
 </code></pre></div><p>Create a &lsquo;meld&rsquo; file in this directory and use the following contents:</p><p><em><strong>$ cat ~/bin/meld</strong></em></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>  <span style=color:#75715e>#!/usr/bin/python</span>
-  
+
   <span style=color:#f92672>import</span> sys
   <span style=color:#f92672>import</span> os
   <span style=color:#f92672>import</span> subprocess
-  
+
   <span style=color:#66d9ef>if</span> len(sys<span style=color:#f92672>.</span>argv) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span>:
     left <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(sys<span style=color:#f92672>.</span>argv[<span style=color:#ae81ff>1</span>]);
   <span style=color:#66d9ef>else</span>:
     left <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
-  
+
   <span style=color:#66d9ef>if</span> len(sys<span style=color:#f92672>.</span>argv) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>2</span>:
     right <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(sys<span style=color:#f92672>.</span>argv[<span style=color:#ae81ff>2</span>]);
   <span style=color:#66d9ef>else</span>:
     right <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
-  
+
   <span style=color:#66d9ef>if</span> len(sys<span style=color:#f92672>.</span>argv) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>3</span>:
     merged <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(sys<span style=color:#f92672>.</span>argv[<span style=color:#ae81ff>3</span>]);
   <span style=color:#66d9ef>else</span>:
     merged <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
-  
+
   MELDPATH <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;/Applications/Meld.app&#34;</span>
   arguments <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34; -n &#34;</span> <span style=color:#f92672>+</span> MELDPATH <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; --args &#34;</span> <span style=color:#f92672>+</span> left <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#f92672>+</span> merged <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#f92672>+</span> right
-  
+
   p <span style=color:#f92672>=</span> subprocess<span style=color:#f92672>.</span>call([<span style=color:#e6db74>&#39;open&#39;</span>, <span style=color:#e6db74>&#39;-W&#39;</span>, <span style=color:#e6db74>&#39;-a&#39;</span>,  MELDPATH, <span style=color:#e6db74>&#39;--args&#39;</span>, left, merged, right])
 </code></pre></div><p>And finally, add the following to your ~/.gitconfig</p><pre><code>  [mergetool &quot;meld&quot;]
           cmd = meld \&quot;$LOCAL\&quot; \&quot;$REMOTE\&quot; \&quot;$MERGED\&quot;
