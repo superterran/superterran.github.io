@@ -9,6 +9,7 @@ paginate                = 3
 googleAnalytics         = "UA-71254-3"
 pluralizeListTitles     = false
 disableLanguages        = []
+enableGitInfo           = true
 
 [markup.goldmark.renderer]
   unsafe                = true
@@ -122,3 +123,9 @@ disableLanguages        = []
   twitter               = "superterran"
   # Email
   email                 = "superterran@gmail.com"
+
+[frontmatter]
+  date = [":default",":fileModTime"]
+
+[permalinks]
+  blog = ":filename"
