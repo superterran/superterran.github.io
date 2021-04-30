@@ -2,7 +2,7 @@
 title = "Contact"
 layout = "contact"
 netlify = false
-emailservice = "https://formspree.io/superterran@gmail.com"
+emailservice = "https://formspree.io/f/xyylkwoz"
 description = "Reach out to me for any reason!"
 
 contactanswertime = 48
