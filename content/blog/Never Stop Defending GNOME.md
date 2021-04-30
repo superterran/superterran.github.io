@@ -1,1 +1,3 @@
 I don't see any problem with defending GNOME, the latest release is really something great. Huge fan of the gorgeous activities overview. I even went so far as to create a module called [clear top bar](https://github.com/superterran/gnome-shell-extension-clear-top-bar) for it, too. 
+
+Let's see if it works...
