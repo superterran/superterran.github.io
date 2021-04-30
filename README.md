@@ -7,3 +7,7 @@ a static website using the hugo static site generator, with the future-imperfect
 ```/bin/bash
 hugo server --watch -D
 ```
+
+## links
+
+* [formspree](https://formspree.io/forms/xyylkwoz/submissions)
