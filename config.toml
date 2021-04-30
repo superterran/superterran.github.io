@@ -1,9 +1,9 @@
-baseURL = "http://www.superterran.net"
+exbaseURL = "http://www.superterran.net"
 title = "superterran"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
-theme = "minimo"
+theme = ["https://github.com/MunifTanjim/minimo"]
 
 disqusShortname = ""
 googleAnalytics = ""
@@ -95,7 +95,7 @@ enable = false
 apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 username = "superterran"
-repository = "blog"
+repository = "superterran.github.io"
 
 # Utterances: https://utteranc.es
 [params.comments.utterances]
@@ -106,7 +106,7 @@ theme = "github-light"
 
 [params.comments.utterances.github]
 username = "superterran"
-repository = "blog"
+repository = "superterran.github.io"
 
 [params.search]
 client = "fuse" # algolia / fuse / lunr
