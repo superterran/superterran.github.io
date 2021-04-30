@@ -47,14 +47,14 @@ hideEntryMeta = ["page"] # boolean / array of sections
 showReadingTime = true
 showLastmod = true
 taxonomyCloudShuffle = true
-accentColor = "#ffcd00"
+accentColor = "#A50000"
 hideMainMenu = false
 
 [params.sidebar]
 enable = true
 
 [params.widgets]
-header = ["breadcrumbs"]
+#header = ["breadcrumbs"]
 homepage = ["recent_posts"]
 sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
@@ -95,7 +95,7 @@ enable = false
 apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 username = "superterran"
-repository = "dotnet"
+repository = "blog"
 
 # Utterances: https://utteranc.es
 [params.comments.utterances]
@@ -106,7 +106,7 @@ theme = "github-light"
 
 [params.comments.utterances.github]
 username = "superterran"
-repository = "dotnet"
+repository = "blog"
 
 [params.search]
 client = "fuse" # algolia / fuse / lunr
@@ -125,11 +125,11 @@ tag = "tags"
 [permalinks]
 page = "/:slug/"
 
-[[menu.main]]
-name = "Repo"
-weight = -10
-identifier = "repository"
-url = "https://github.com/superterran/"
+#[[menu.main]]
+#name = "Repo"
+#weight = -10
+#identifier = "repository"
+#url = "https://github.com/superterran/"
 
 [blackfriday]
 hrefTargetBlank = true
