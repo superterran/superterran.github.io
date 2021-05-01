@@ -73,7 +73,7 @@ enableGitInfo           = true
 
   [params.utterances]
     enabled             = true
-    repo                = "superterran/superterran.github.io"
+    repo                = "superterran/blog"
     issueTerm           = "pathname"
     issueNumber         = ""
     label               = "" 
