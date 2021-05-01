@@ -125,7 +125,7 @@ enableGitInfo           = true
   email                 = "superterran@gmail.com"
 
 [frontmatter]
-  date = [":default",":fileModTime"]
-
+  date = [":default",".GitInfo.AuthorDate",":fileModTime"]
+  
 [permalinks]
   blog = ":filename"
