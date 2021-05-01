@@ -17,6 +17,9 @@ jobs:
       - name: update 'blog' submodule
         run: git submodule update --remote content/blog
 
+      - name: refresh timestamps
+        run: bin/git-timesync content/blog/  
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
