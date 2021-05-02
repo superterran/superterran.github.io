@@ -63,7 +63,7 @@ enableGitInfo           = true
       alt                 = "superterran logo"
 
   [params.sidebar]
-    about               = "This theme was developed for Hugo static site generator."
+    about               = "I'm a DevOps engineer and eCommerce guru who lives in sunny Charleston, SC. I mostly write about my other exploits with my laptop that's distracting me from work"
     postAmount          = 0
     categories          = false
     categoriesByCount   = true
