@@ -63,7 +63,7 @@ enableGitInfo           = true
       alt                 = "superterran logo"
 
   [params.sidebar]
-    about               = "I'm a DevOps engineer and eCommerce guru who lives in sunny Charleston, SC. I mostly write about my other exploits with my laptop that's distracting me from work"
+    about               = "I'm a DevOps engineer and eCommerce guru living the good life in sunny Charleston, SC. I mostly write about my other exploits with my laptop, the ones that's distracting me from work"
     postAmount          = 0
     categories          = false
     categoriesByCount   = true
