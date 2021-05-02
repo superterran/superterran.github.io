@@ -7,7 +7,6 @@ theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
 # disqusShortname         = "superterran"
 googleAnalytics         = "UA-71254-3"
-GTM                     = "GTM-TZ3LK3Q"
 pluralizeListTitles     = false
 disableLanguages        = []
 enableGitInfo           = true
@@ -19,6 +18,7 @@ enableGitInfo           = true
   home                  = ["html", "json", "rss"]
 
 [params]
+  GTM                   = "GTM-TZ3LK3Q"
   enableCDN             = false
   cssFiles              = ["default"]
   jsFiles               = ["default"]
