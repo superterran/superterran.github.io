@@ -11,7 +11,7 @@ rssLimit = 10  # Maximum number of items in the RSS feed.
 copyright = "See Individual Projects for Licensing Information" # This message is only used by the RSS template.
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 googleAnalytics = "UA-71254-3"
-# disqusShortname = "yourdiscussshortname"
+# disqusShortname = "superterran"
 
 [author]
   name = "Doug Hatcher"
@@ -36,9 +36,9 @@ googleAnalytics = "UA-71254-3"
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "A minimal and fast theme for Hugo."
+  homeSubtitle = "Heavily subsidized by GitHub"
   footerCopyright = ' &#183; <a href="https://github.com/superterran/" target="_blank">My GitHub</a>'
-  # bgImg = ""  # Homepage background-image URL
+  bgImg = "/bg.jpeg"  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = "https://github.com/superterran/github.io/commit/"
