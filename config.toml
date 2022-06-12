@@ -1,132 +1,91 @@
-# For a description of these parameters, please visit the theme wiki.
-# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
-baseurl                 = "https://superterran.github.io/"
-DefaultContentLanguage  = "en"
-title                   = "superterran"
-theme                   = "hugo-future-imperfect-slim"
-paginate                = 3
-# disqusShortname         = "superterran"
-googleAnalytics         = "UA-71254-3"
-pluralizeListTitles     = false
-disableLanguages        = []
-enableGitInfo           = true
+baseURL = "https://superterran.net/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "superterran"
+theme = "hermit"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "See Individual Projects for Licensing Information" # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+googleAnalytics = "UA-71254-3"
+# disqusShortname = "yourdiscussshortname"
 
-[markup.goldmark.renderer]
-  unsafe                = true
+[author]
+  name = "Doug Hatcher"
 
-[outputs]
-  home                  = ["html", "json", "rss"]
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
 
 [params]
-  GTM                   = "GTM-TZ3LK3Q"
-  enableCDN             = false
-  cssFiles              = ["default"]
-  jsFiles               = ["default"]
-  highlightjs           = true
-  highlightjsTheme      = ""
-  highlightjsLang       = []
-  viewMorePostsLink     = "/blog/"
-  readingTime           = true
-  imageStretch          = ""
-  removeBlur            = false
-  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
-  hideEmptyStats        = false
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-  [params.meta]
-    description         = "Mostly a blog"
-    author              = "Doug Hatcher"
-    favicon             = false
-    svg                 = true
-    faviconVersion      = "1"
-    msColor             = "#ffffff"
-    iOSColor            = "#ffffff"
+  # Metadata mostly used in document's head
+  # description = ""
+  # images = [""]
+  themeColor = "#494f5c"
 
-  [params.header]
-    navbarTitle         = "superterran"
-    dynamicTitles       = true
-    searchMenu          = true
-    shareMenu           = true
-    languageMenu        = false
+  homeSubtitle = "A minimal and fast theme for Hugo."
+  footerCopyright = ' &#183; <a href="https://github.com/superterran/" target="_blank">My GitHub</a>'
+  # bgImg = ""  # Homepage background-image URL
 
-  [params.intro]
-    header                = "Doug Hatcher"
-    paragraph             = "From my editor, through some pipes, to your browser"
-    rssIntro              = true
-    socialIntro           = true
-    hideWhenSingleColumn  = false
-    alwaysOnHomepage      = true
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/superterran/github.io/commit/"
 
-    [params.intro.pic]
-      src                 = "images/logo.png"
-      shape               = "circle"
-      width               = "200"
-      alt                 = "superterran logo"
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = false  # Set "text-align: justify" to `.content`.
 
-  [params.sidebar]
-    about               = "I'm a DevOps engineer and eCommerce guru living the good life in sunny Charleston, SC. I mostly write about my other exploits with my laptop, the ones that distract me from work"
-    postAmount          = 0
-    categories          = false
-    categoriesByCount   = true
+  relatedPosts = false  # Add a related content section to all single posts page
 
-  [params.footer]
-    rssFooter           = true
-    socialFooter        = false
+  code_copy_button = true # Turn on/off the code-copy-button for code-fields
+  
+  # Add custom css
+  # customCSS = ["css/foo.css", "css/bar.css"]
 
-  [params.utterances]
-    enabled             = true
-    repo                = "superterran/blog"
-    issueTerm           = "pathname"
-    issueNumber         = ""
-    label               = "" 
-    theme               = "github-light"
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/superterran/"
+
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/superterran"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/doughatcher/"
+
+  [[params.social]]
+    name = "codepen"
+    url = "https://codepen.io/superterran/"
 
 
 [menu]
 
   [[menu.main]]
-    name              = "Home"
-    identifier        = "home"
-    url               = "/"
-    pre               = "<i class='fa fa-home'></i>"
-    weight            = 1
+    name = "magento-cli"
+    url = "https://superterran.net/magento-cli/"
+    weight = 10
 
   [[menu.main]]
-    name              = "About"
-    identifier        = "about"
-    url               = "/about/"
-    pre               = "<i class='far fa-envelope'></i>"
-    weight            = 2
+    name = "mach"
+    url = "https://superterran.net/mach/"
+    weight = 20
 
   [[menu.main]]
-    name              = "Github"
-    identifier        = "github"
-    url               = "https://github.com/superterran/"
-    pre               = "<i class='far fa-id-card'></i>"
-    weight            = 3
-
-[Languages]
-
-  [Languages.en]
-    LanguageCode        = "en"
-    LanguageName        = "English"
-    weight              = 1
-
-[social]
-  # Coding Communities
-  github                = "superterran"
-#  bitbucket             = "doug.hatcher"
-  codepen               = "superterran"
-  # Professional/Business Oriented Communities
-  linkedin              = "doughatcher"
-  facebook              = "doug.hatcher"
-  reddit                = "superterran"
-  # youtube               = "superterran"
-  twitter               = "superterran"
-  # Email
-  email                 = "superterran@gmail.com"
-
-[frontmatter]
-  date = [":default",".GitInfo.AuthorDate",":fileModTime"]
-  
-[permalinks]
-  blog = ":filename"
+    name = "game genie"
+    url = "https://superterran.net/gamegenie/"
+    weight = 100
