@@ -89,3 +89,9 @@ googleAnalytics = "UA-71254-3"
     name = "game genie"
     url = "https://superterran.net/gamegenie/"
     weight = 100
+
+  [[menu.main]]
+    name = "tandy 1000ex"
+    url = "https://github.com/superterran/tandy1000ex"
+    weight = 100
+
