@@ -92,6 +92,6 @@ googleAnalytics = "UA-71254-3"
 
   [[menu.main]]
     name = "tandy 1000ex"
-    url = "https://github.com/superterran/tandy1000ex"
+    url = "https://superterran.net/tandy1000ex/"
     weight = 100
 
