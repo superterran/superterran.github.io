@@ -34,7 +34,7 @@ googleAnalytics = "UA-71254-3"
   # Metadata mostly used in document's head
   # description = ""
   # images = [""]
-  themeColor = "#494f5c"
+  themeColor = "#26292e"
 
   homeSubtitle = "Heavily subsidized by GitHub"
   footerCopyright = ' &#183; <a href="https://github.com/superterran/" target="_blank">My GitHub</a>'
