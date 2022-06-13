@@ -38,7 +38,7 @@ googleAnalytics = "UA-71254-3"
 
   homeSubtitle = "Heavily subsidized by GitHub"
   footerCopyright = ' &#183; <a href="https://github.com/superterran/" target="_blank">My GitHub</a>'
-  bgImg = "https://loremflickr.com/1920/1080/charleston/"  # Homepage background-image URL
+  bgImg = "https://loremflickr.com/1920/1080/space/"  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   gitUrl = "https://github.com/superterran/superterran.github.io/commit/"
