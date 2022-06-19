@@ -77,7 +77,7 @@ googleAnalytics = "UA-71254-3"
 
   [[menu.main]]
     name = "magento-cli"
-    url = "https://superterran.net/magento-cli/"
+    url = "https://magento-cli.com/"
     weight = 10
 
   [[menu.main]]
