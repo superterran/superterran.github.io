@@ -1,0 +1,16 @@
+/* tighten the profile card spacing */
+article header h1 {
+  letter-spacing: -0.02em;
+}
+
+/* make inline code pop a bit more on the terminal scheme */
+code:not(pre code) {
+  font-size: 0.88em;
+}
+
+/* post cards: slightly warmer hover on the terminal green */
+.hover\:shadow-md:hover {
+  transition: box-shadow 0.15s ease;
+}
+
+/* footer: drop "Powered by Blowfish" — already disabled in params */
