@@ -1,0 +1,21 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "superterran.net"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2006-01-02"
+  description = "A working notebook — projects, infra, things I'm tinkering with."
+
+[params.author]
+  name = "Doug Hatcher"
+  headline = "Enterprise Architect. Tinkerer. This is the workshop."
+  bio = "An auto-narrated feed of personal projects, homelab notes, and whatever I'm actually doing — operated by an agent under guardrails, merged by me."
+  links = [
+    { github = "https://github.com/superterran" },
+    { link = "https://doughatcher.com" },
+  ]
