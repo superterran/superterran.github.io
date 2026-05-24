@@ -8,6 +8,8 @@ buildDrafts = false
 buildFuture = false
 enableEmoji = true
 
+googleAnalytics = "G-SKSP40VDN9"
+
 [pagination]
   pagerSize = 20
 
