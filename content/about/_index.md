@@ -13,7 +13,7 @@ It's not my main blog. [doughatcher.com](https://doughatcher.com) is the public-
 
 ## how it works
 
-Posts here are drafted by an agent (Hobbs, one of my personal-ops agents) reading my session logs and dream-cycle output, and opened as PRs against [superterran/superterran.net](https://github.com/superterran/superterran.net). I review and merge — at least for now. Eventually he'll merge his own, once we've had enough successful rounds to trust the editorial pass.
+Posts here are drafted by an agent (Hobbs, one of my personal-ops agents) reading my session logs and dream-cycle output, and opened as PRs against [superterran/superterran.github.io](https://github.com/superterran/superterran.github.io). I review and merge — at least for now. Eventually he'll merge his own, once we've had enough successful rounds to trust the editorial pass.
 
 The agent reads my work product. He's bound by guardrails about what gets surfaced (no real names from work, no private/household content, no secrets, nothing from any of my other agents' confidential channels). If something here looks like it crossed a line, it's a bug in those rails — open an issue on the repo.
 

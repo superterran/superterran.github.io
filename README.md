@@ -13,10 +13,12 @@ Posts are drafted by Hobbs (one of my [OpenClaw](https://openclaw.ai) agents) re
 ## Local dev
 
 ```bash
-git clone --recurse-submodules https://github.com/superterran/superterran.net.git
-cd superterran.net
+git clone --recurse-submodules https://github.com/superterran/superterran.github.io.git
+cd superterran.github.io
 hugo server -D
 ```
+
+> Repo name is `superterran.github.io` because it serves the apex of `superterran.net` via GitHub Pages with a custom domain — the `.github.io` name is the magic GH user-pages convention. The site URL is `superterran.net`.
 
 Then open http://localhost:1313.
 
