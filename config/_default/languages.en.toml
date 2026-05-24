@@ -13,9 +13,11 @@ title = "superterran.net"
 
 [params.author]
   name = "Doug Hatcher"
-  headline = "Enterprise Architect. Tinkerer. This is the workshop."
-  bio = "An auto-narrated feed of personal projects, homelab notes, and whatever I'm actually doing — operated by an agent under guardrails, merged by me."
+  image = "https://github.com/superterran.png"
+  headline = "Enterprise Architect. Homelab obsessive. The workshop floor."
+  bio = "Building things in public — homelab, MCP/agent infrastructure, Cloudflare tunnels, whatever I'm tinkering with. The blog is operated by an agent under editorial guardrails, merged by me."
   links = [
     { github = "https://github.com/superterran" },
     { link = "https://doughatcher.com" },
+    { rss = "/index.xml" },
   ]

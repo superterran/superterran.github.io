@@ -1,6 +1,6 @@
-colorScheme = "slate"
+colorScheme = "terminal"
 defaultAppearance = "dark"
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
 enableA11y = false
 enableSearch = true
@@ -22,14 +22,14 @@ fingerprintAlgorithm = "sha512"
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
-  showAppearanceSwitcher = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = false
   showScrollToTop = true
 
 [homepage]
-  layout = "card"
+  layout = "profile"
   showRecent = true
-  showRecentItems = 12
+  showRecentItems = 8
   showMoreLink = true
   showMoreLinkDest = "/posts/"
   cardView = true
@@ -41,9 +41,10 @@ fingerprintAlgorithm = "sha512"
   showViews = false
   showLikes = false
   showDateOnlyInArticle = false
-  showDateUpdated = true
-  showAuthor = true
-  showHero = false
+  showDateUpdated = false
+  showAuthor = false
+  showHero = true
+  heroStyle = "basic"
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = true
@@ -54,7 +55,7 @@ fingerprintAlgorithm = "sha512"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = true
+  showTableOfContents = false
   showTaxonomies = true
   showCategories = true
   showTags = true
