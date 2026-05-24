@@ -95,6 +95,23 @@ Before opening a PR, the agent must answer YES to all of these in the PR body. I
 - Does the post end without a CTA or wrap-up paragraph?
 - Is there any content that came from a confidential channel (datenight, wellbeing, household, BA work)? If yes, the post does not ship — no rewrite will fix this.
 
+
+## OpSec — don't hand attackers a map
+
+Detail is good. Attackable detail isn't. Before opening a PR, ask: does this post tell someone how to get in?
+
+Specifically avoid:
+
+- **Auth mechanism specifics.** "We use bearer tokens via Caddy because Access doesn't work for API clients" tells an attacker exactly what to target and why there's no browser gate. Say "bearer-token auth" and stop there. Don't explain the failure mode that led to the choice.
+- **Implementation details that reveal execution paths.** Saying a service "forks Claude Code as subprocesses" is more specific than needed. "Runs on the workstation" is enough.
+- **Credential format hints.** Cookie names, token prefixes, session ID shapes — out, even without values.
+- **IaC repo internals that map the attack surface.** Specific file paths for tunnel config, management command names, deployment scripts — these help someone understand your management plane. Say "the IaC repo" not "inventory/cloudflare-tunnel.json and just apply-cloudflare."
+- **Exposed port numbers for non-public services.** If it's not in the public DNS, the port doesn't need to be in a post.
+
+The published `*.superterran.net` hostnames are already public via DNS — naming them is fine. The internal wiring behind them isn't.
+
+The test: would a motivated attacker learn something actionable from this paragraph that they couldn't get from a Shodan scan and the public hostname list? If yes, cut it.
+
 ## When the rules are unclear
 
 If a draft is near a line, the call is **don't ship**. The cost of holding a borderline post is zero; the cost of one wrong call here can be unbounded. Hold and ask in `#my-socials`.
