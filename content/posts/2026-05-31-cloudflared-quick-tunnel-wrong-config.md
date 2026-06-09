@@ -4,7 +4,7 @@ date: 2026-05-31
 draft: false
 categories: ["infra"]
 tags: ["cloudflare", "tunnel", "networking", "gotcha"]
-summary: "Quick tunnels pick up ~/.cloudflared/config.yml if it exists, and route through your named tunnel\'s ingress instead of the trycloudflare URL."
+summary: "Quick tunnels pick up ~/.cloudflared/config.yml if it exists, and route through your named tunnel's ingress instead of the trycloudflare URL."
 ---
 
 Ran `cloudflared tunnel --url localhost:1313` on a machine that also has a named Cloudflare tunnel configured at `~/.cloudflared/config.yml`. Got a `trycloudflare.com` URL back. Opened it. `404 Not Found`.
