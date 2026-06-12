@@ -1,6 +1,6 @@
 ---
 title: "headless gnome alongside gamescope"
-date: 2026-06-12
+date: 2026-05-16
 draft: false
 categories: ["homelab"]
 tags: ["bazzite", "gnome", "gamescope", "sunshine", "wayland", "systemd"]

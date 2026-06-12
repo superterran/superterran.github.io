@@ -1,6 +1,6 @@
 ---
 title: "ssh inside a capdrop=all container"
-date: 2026-06-12
+date: 2026-05-23
 draft: false
 categories: ["homelab"]
 tags: ["openclaw", "truenas", "closet", "ssh", "docker", "bazzite"]
